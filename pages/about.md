@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 关于
-permalink: /about/
+permalink: /aboutme/
 icon: glyphicon-heart
 ---
 
