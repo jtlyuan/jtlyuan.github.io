@@ -1,10 +1,9 @@
 ---
-layout:post
-title:	"Android 进程通信机制"
-date:	2016-01-09 16:50:13
-categories： Android	 
+layout: post
+title:  "Android IPC简介"
+date:   2015-04-06 15:14:54
+categories: android
 ---
-
 ##序言
 
 我们知道线程间通信很简单，只要通过内存数据共享就可以实现通信了，但是进程间怎样进行通信呢？在Android中一个进程指一个程序或一个应用，多进程通信，通常也是指应用间通信。**Android每个进程运行在不同的虚拟机中，不同的虚拟机在内存上拥有不同的地址空间，所以进程间的通信就不能通过内存地址进程共享数据了。**    
