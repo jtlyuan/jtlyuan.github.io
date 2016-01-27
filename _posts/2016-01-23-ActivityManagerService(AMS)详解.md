@@ -1,6 +1,10 @@
-#ActivityManager和ActivityManagerService(AMS)
+---
+layout: post
+title: "ActivityManager和ActivityManagerService(AMS)"
+date: 2016-01-26 22:36:00
+categories: android
+---
 
-#ActivityManager
 * 官方的解析是：作用是与系统运行的Activity进行管理和维护，提供了很多的getXX的方法来获取Activity的Task、Memory扥信息。
 
 * 通过getXX的方法都是通过ActivityManagerNative.getDefault()来实现的。比如
@@ -60,18 +64,4 @@ class ActivityManagerProxy implements IActivityManager {
 
 他们之间的调用关系如下：
 
-
-
-提供了Activity所有生命周期的回调
-
-
-
-
-
-
-#Instrumentation
-创建Application，创建Activity、生命周期管理，启动Activity的辅助类
-
-#H
-处理AMS发送来的具体消息
-
+![image](https://github.com/jtlyuan/jtlyuan.github.io/blob/master/css/pics/ams-binder%E5%AE%9E%E7%8E%B0.jpg?raw=true)
